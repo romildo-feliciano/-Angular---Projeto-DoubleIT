@@ -1,0 +1,58 @@
+.responsive {
+  width:100%;
+  height: auto;
+  display:flex;
+  flex-direction:row;
+}
+.imgBackground{
+  display: flex;
+  margin-left: -50%;
+  height:100%;
+  width:100%;
+}
+.imgLogoD{
+  margin-left: -9%;
+  margin-top: 42%;
+}
+
+.componentsRight{
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.imgEntre{
+  height: auto;
+  width: 25%;
+}
+
+.imgLine{
+  margin-bottom: 10%;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+}
+
+.border{
+  width: 90%;
+  margin: 2%;
+  border-width: 2px;
+  border-color: black;
+  border-style: ridge;
+  border-radius: 80px;
+  display: inline-block;
+}
+
+mat-form-field{
+  width: 90%;
+  margin: 3% 0% 0% 5%;
+}
+
+button{
+  margin-bottom: 50%
+}

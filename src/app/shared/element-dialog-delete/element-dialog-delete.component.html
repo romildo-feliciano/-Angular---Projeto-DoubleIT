@@ -1,0 +1,6 @@
+<h1 mat-dialog-title>Remover Produto.</h1>
+<span>Você realmente deseja excluir esse produto ?</span>
+<div class="button-footer" mat-dialog-actions>
+  <button mat-raised-button color="primary" [mat-dialog-close]="data" cdkFocusInitial>Confirmar</button>
+  <button mat-stroked-button color="primary" (click)="onCancel()">Cancelar</button>
+</div>

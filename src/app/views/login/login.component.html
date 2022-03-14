@@ -1,0 +1,36 @@
+<div class="responsive">
+  <img class="imgBackground" [src]="imgBack">
+  <img class="imgLogoD" [src]="imgLogoD">
+
+  <div class="componentsRight">
+    <img class="imgEntre" [src]="imgEntre">
+    <img class="imgLine" [src]="imgLine">
+
+    <div class="inputs">
+      <div class="border">
+        <mat-form-field>
+          <mat-label>Nome</mat-label>
+          <input class="badge" matInput type="text" [maxLength]="50" [(ngModel)]="nome">
+          <button *ngIf="nome" matSuffix mat-icon-button aria-label="Clear" (click)="nome=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+      <div class="border">
+        <mat-form-field>
+          <mat-label>Senha</mat-label>
+          <input class="badge" matInput [type]="inputType" [maxLength]="8"[(ngModel)]="senha">
+          <button *ngIf="senha && this.inputType=='password'" matSuffix mat-icon-button aria-label="tipo" (click)="tipo()">
+            <mat-icon>visibility_off</mat-icon>
+          </button>
+          <button *ngIf="senha && this.inputType=='text'" matSuffix mat-icon-button aria-label="tipo" (click)="tipo()">
+            <mat-icon>visibility</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+
+      <button mat-flat-button type="submit" (click)="submit()"><img class="imgButton" [src]="imgButton"></button>
+    </div>
+  </div>
+
+</div>

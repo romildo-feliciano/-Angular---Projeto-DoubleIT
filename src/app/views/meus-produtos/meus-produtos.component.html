@@ -1,0 +1,35 @@
+<div>
+  <button class="adicionar-produto" mat-raised-button color="primary" (click)="openDialog(null)"
+    >Adicionar Produto</button>
+  <h2 class="text">Meus Produtos.</h2>
+</div>
+
+<div class="list-prod" *ngFor="let prod of produtos; let i = index" >
+  <mat-card class="prod-card">
+    <mat-card-actions>
+      <button mat-icon-button (click)="oculto(prod.nome)">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <ul class="mat-elevation-z8 menu" *ngIf="prod.menu">
+        <button mat-icon-button (click)="editElement(prod)" >
+          <mat-icon>edit</mat-icon>
+          <span>Editar</span>
+        </button>
+        <button mat-icon-button style="margin-bottom: 10%;" (click)="deleteElement(prod, i)" >
+          <mat-icon >delete</mat-icon>
+          <span>Excluir</span>
+        </button>
+      </ul>
+    </mat-card-actions>
+    <img class="imagem-prod" mat-card-image src={{prod.imagem}} alt="Foto do produto">
+    <mat-card-title>{{prod.nome}}</mat-card-title>
+    <mat-card-subtitle>{{prod.descricao}}</mat-card-subtitle>
+    <span class="valor">{{prod.valor | currency : 'BRL'}}</span>
+    <div *ngFor="let item of prod.listCategorias">
+      <div *ngFor="let prod of item" class="list-categoria">
+        <button style="border-radius: 10px;" mat-stroked-button color="primary">{{prod}}</button>
+      </div>
+    </div>
+  </mat-card>
+</div>
+

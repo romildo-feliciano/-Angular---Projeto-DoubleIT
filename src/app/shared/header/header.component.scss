@@ -1,0 +1,48 @@
+mat-toolbar{
+  background-color: #FFFFFF;
+  img{
+    margin: 0% 6% 0% 4%;
+    max-width: 103px;
+    max-height: 34px;
+    min-width: 50px;
+    min-height: 15px;
+    width: 10%;
+    height: auto;
+  }
+}
+
+span{
+  margin: 0% 2% 0% 2%;
+  font-size: 16px;
+  text-align: left;
+}
+
+.selected {
+  font-weight: bold;
+  border-bottom: 4px solid darkblue;
+}
+
+.spacer{
+  flex: 1 1 auto;
+}
+
+div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 5%;
+  border-left: 1px solid #CCCCCC;
+
+  img{
+    max-width: 40px;
+    max-height: 40px;
+    width: 20%;
+    height: auto;
+    padding: 0% 2% 0% 14%;
+  }
+
+  span{
+    font-size: 16px;
+    text-align: left;
+  }
+}

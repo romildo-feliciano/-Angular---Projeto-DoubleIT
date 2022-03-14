@@ -1,0 +1,32 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1{
+  padding-bottom: 2%;
+  border-bottom: 1px solid black;
+}
+.nome{
+  width: 100%;
+  height: auto;
+}
+
+.full-width {
+  width: 100%;
+}
+
+td {
+  padding-right: 8px;
+}
+
+.button-footer{
+  display: flex;
+  align-items: end;
+  flex-direction: row-reverse;
+
+  button{
+    margin: 1% 1% 1% 1%;
+  }
+}
